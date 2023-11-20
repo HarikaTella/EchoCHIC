@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .welcome {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+        .welcome h1 {
+            color: rgb(179, 179, 4);
+            text-align: center;
+            margin-top: 10%;
+            -webkit-text-stroke: 1.5px black;
+            border-block: solid;
+        }
+
+    .login {
+        margin-left: 35%;
+        display: flex;
+        gap: 20px;
+        padding-left: 5px;
+        text-align: center;
+        margin-top:8%;
+        
+    }
+
+    .btn {
+        border-color: mintcream;
+        border-radius: 10px;
+        font-size: larger;
+        background-color: white;
+        padding: 3px 30px;
+        text-align: center;
+    }
+
+        .btn:hover {
+            border-color: black;
+            background-color: rgb(179, 179, 30);
+            box-shadow: 0 0 10px rgb(27, 27, 6);
+        }
+
+    .image {
+        display: flex;
+    }
+</style>
+<section>
+   
+    <div class="welcome">
+        <h1 style="text-shadow:0 0 1px black;">Welcome To Echo CHIC</h1>
+        <h4>Welcome To the Fashion World Where you can Find Your Clothing Soul Happy.</h4>
+    </div>
+    <div class="login">
+        <button class="btn"><a asp-controller="Home" asp-action="loginpage" style="text-decoration:none; color:black; font-weight:600;">LOGIN</a></button>
+        <button class="btn"><a asp-controller="Home" asp-action="signuppage" style="text-decoration:none; color:black;font-weight:600;">SIGNUP</a></button>
+    </div>
+   
+</section>
+
